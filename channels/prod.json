@@ -1,0 +1,201 @@
+{
+    "schema":  1,
+    "channel":  "prod",
+    "version":  "2026.09.26-2",
+    "published":  "2026-09-25T23:42:49Z",
+    "minecraft":  "1.21.1",
+    "loader":  "fabric",
+    "notes":  [
+                  "*"
+              ],
+    "blockedMods":  [
+                        "freecam"
+                    ],
+    "files":  [
+                  {
+                      "path":  "config/sound_physics_remastered/occlusion.properties",
+                      "sha256":  "273214a8ed3b42da98b0cf6abdad616dec72e00c9a4fe143ec50ee36176f9958",
+                      "size":  4879,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/config__sound_physics_remastered__occlusion.properties"
+                  },
+                  {
+                      "path":  "config/sound_physics_remastered/reflectivity.properties",
+                      "sha256":  "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a",
+                      "size":  4713,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/config__sound_physics_remastered__reflectivity.properties"
+                  },
+                  {
+                      "path":  "config/sound_physics_remastered/sound_rates.properties",
+                      "sha256":  "e9aa176c63024908136e66d76b98cdd1c22e6755ef41bdc3aee40e43ae65ea37",
+                      "size":  64444,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/config__sound_physics_remastered__sound_rates.properties"
+                  },
+                  {
+                      "path":  "config/sound_physics_remastered/soundphysics.properties",
+                      "sha256":  "d29dede3f214ee4b1aa03314f92c3f973c21ee6e26d173eba3d01a2083237b6d",
+                      "size":  5104,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/config__sound_physics_remastered__soundphysics.properties"
+                  },
+                  {
+                      "path":  "mods/cloth-config-15.0.140-fabric.jar",
+                      "modId":  "cloth-config",
+                      "sha256":  "33894e95da3af59014b39d126586d5241e07ea39f8618763e30dab637405f95f",
+                      "size":  1157166,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__cloth-config-15.0.140-fabric.jar"
+                  },
+                  {
+                      "path":  "mods/fabric-api-0.116.12+1.21.1.jar",
+                      "modId":  "fabric-api",
+                      "sha256":  "b872f8c6de3a49cb2f01482830552b4e9fa246ca2274e99f393caefa4a121ff2",
+                      "size":  2427037,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fabric-api-0.116.12_1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/fabric-language-kotlin-1.13.11+kotlin.2.3.21.jar",
+                      "modId":  "fabric-language-kotlin",
+                      "sha256":  "c35713ee1da70fde6bf0e9ed26f8e2baf0814e60eb993cd12acb940e57f4fd2f",
+                      "size":  7813444,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fabric-language-kotlin-1.13.11_kotlin.2.3.21.jar"
+                  },
+                  {
+                      "path":  "mods/ferritecore-7.0.3-fabric.jar",
+                      "modId":  "ferritecore",
+                      "sha256":  "98c3ab1d5aab8f14b5d082d3f1a467727fd335f02d124555c94339761c4c18f2",
+                      "size":  123450,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__ferritecore-7.0.3-fabric.jar"
+                  },
+                  {
+                      "path":  "mods/fzzy_config-0.7.6+1.21.jar",
+                      "modId":  "fzzy_config",
+                      "sha256":  "323dc065cc3aaeb7f908be7e5d31070a25d4188b433ed770a79700ef8f5e8f7d",
+                      "size":  2365335,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
+                  },
+                  {
+                      "path":  "mods/Gexpress_V1.19.jar",
+                      "modId":  "gexpress",
+                      "sha256":  "e306e21de321741bdbbf457438ae549154b20a55b5a2e3ef6f98fc4aa6c264ad",
+                      "size":  1759629,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__Gexpress_V1.19.jar"
+                  },
+                  {
+                      "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
+                      "modId":  "harpymodloader",
+                      "sha256":  "c7b37204ad73c81d70ac11ec717ca75cafddb82349aee409100a5e300a905158",
+                      "size":  540235,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__harpymodloader-1.2.4-h1.3.jar"
+                  },
+                  {
+                      "path":  "mods/iris-fabric-1.8.8+mc1.21.1.jar",
+                      "modId":  "iris",
+                      "sha256":  "b5ad39a6cb113ca0a1765f06689f9f4b29ccd0c81247de90b06c42f5da1092f5",
+                      "size":  2690177,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__iris-fabric-1.8.8_mc1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/kinswathe_V1.13.jar",
+                      "modId":  "kinswathe",
+                      "sha256":  "816ba016d5158bdce106fc42291e076a4d2b1656ef570b0b5bc41886a45b81fd",
+                      "size":  403772,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__kinswathe_V1.13.jar"
+                  },
+                  {
+                      "path":  "mods/lithium-fabric-0.15.3+mc1.21.1.jar",
+                      "modId":  "lithium",
+                      "sha256":  "a1eb3b150b559b0c0976f628ffd5f791458b98891634211b2727ff7857d157b8",
+                      "size":  797398,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__lithium-fabric-0.15.3_mc1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/noellesroles_V1.26.jar",
+                      "modId":  "noellesroles",
+                      "sha256":  "542fb82cb4cd87c7b34087f6cf86d45eeb051dca2659e716316e9914747e1f8c",
+                      "size":  842910,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__noellesroles_V1.26.jar"
+                  },
+                  {
+                      "path":  "mods/owo-lib-0.13.0-alpha.15+1.21.jar",
+                      "modId":  "owo",
+                      "sha256":  "bf14fd85d3d360e5c1f8e4e2294a8b2ee5c0baf7f3788160473b6d217ef3816f",
+                      "size":  1963544,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__owo-lib-0.13.0-alpha.15_1.21.jar"
+                  },
+                  {
+                      "path":  "mods/placeholder-api-2.4.2+1.21.jar",
+                      "modId":  "placeholder-api",
+                      "sha256":  "c0187ee299527ac7a3e0b1e83601dcdc0de631e286fe41e6be1a75958ea8e443",
+                      "size":  232325,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__placeholder-api-2.4.2_1.21.jar"
+                  },
+                  {
+                      "path":  "mods/ratatouille-1.4.3-1.21.1.jar",
+                      "modId":  "ratatouille",
+                      "sha256":  "917cbcfcc2e4c1175c7933b7758092fd4281de1972e0724d96cb1c25b02da637",
+                      "size":  941255,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__ratatouille-1.4.3-1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/sodium-fabric-0.6.13+mc1.21.1.jar",
+                      "modId":  "sodium",
+                      "sha256":  "e04599514d88e41765f710eeba59e3814909833396bc11b977f48fc2e7e50353",
+                      "size":  1297761,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__sodium-fabric-0.6.13_mc1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+                      "modId":  "sound_physics_remastered",
+                      "sha256":  "8884ded0f53f97a6cb2fca9ef035947af8c3376a406e0bdaa8309bfe87801799",
+                      "size":  205671,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__sound-physics-remastered-fabric-1.21.1-1.5.1.jar"
+                  },
+                  {
+                      "path":  "mods/starry-express_V1.3.jar",
+                      "modId":  "starexpress",
+                      "sha256":  "2eb237d8b1c19fc1ce07ae7cdffd718400a7c7160029ccd61a6a5b4ee631b3c0",
+                      "size":  2170771,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__starry-express_V1.3.jar"
+                  },
+                  {
+                      "path":  "mods/stupid-express_V1.3.jar",
+                      "modId":  "stupid_express",
+                      "sha256":  "79737fa1f4c3f1a8fb23fbd4b06efdbc6e597170d641051aaabaa4355e96b17d",
+                      "size":  144622,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__stupid-express_V1.3.jar"
+                  },
+                  {
+                      "path":  "mods/voicechat-fabric-1.21.1-2.6.17.jar",
+                      "modId":  "voicechat",
+                      "sha256":  "c537b970e8fb5bd120dd3bc6e05d5fbf60b097be985c285a194b2adb82a84eeb",
+                      "size":  5353254,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__voicechat-fabric-1.21.1-2.6.17.jar"
+                  },
+                  {
+                      "path":  "mods/wathe_blood-1.1.4+1.21.1.jar",
+                      "modId":  "wathe_blood",
+                      "sha256":  "0e6810b1af6fd5a2b04c5412e8c21461739753175570111d2efb2356a19b5a42",
+                      "size":  32045,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_blood-1.1.4_1.21.1.jar"
+                  },
+                  {
+                      "path":  "mods/wathe_V1.3.jar",
+                      "modId":  "wathe",
+                      "sha256":  "e89919c6528c8b1a3a8d56003740b68c93b68aef1106bc8a3ef6d3380b1c20ae",
+                      "size":  9662457,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_V1.3.jar"
+                  },
+                  {
+                      "path":  "mods/WatheExtended_V1.40.jar",
+                      "modId":  "watheextended",
+                      "sha256":  "83135749544bfeea0678a7bfdea408afc79151ae9d5847bace4ab335cfb5acfa",
+                      "size":  34450969,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__WatheExtended_V1.40.jar"
+                  },
+                  {
+                      "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+                      "modId":  "yet_another_config_lib_v3",
+                      "sha256":  "6ab420b7d1326fc9851b96a8967504bd644da421ed6438ceb9a9d9c993a408b1",
+                      "size":  1131265,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__yet_another_config_lib_v3-3.8.2_1.21.1-fabric.jar"
+                  }
+              ]
+}
