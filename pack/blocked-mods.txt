@@ -1,0 +1,3 @@
+# Mods retirés du dossier mods des joueurs, sur le canal prod uniquement.
+# Un identifiant de mod par ligne (le champ "id" de son fabric.mod.json).
+freecam

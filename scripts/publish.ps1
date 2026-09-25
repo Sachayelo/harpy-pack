@@ -1,7 +1,7 @@
 ﻿param(
     [ValidateSet('dev', 'prod')]
     [string]$Channel = 'dev',
-    [string]$Notes = '',
+    [string[]]$Notes = @(),
     [switch]$DryRun,
     [switch]$Yes
 )
@@ -14,6 +14,9 @@ $PackDir = Join-Path $Root 'pack'
 $ChannelDir = Join-Path $Root 'channels'
 $Utf8NoBom = New-Object System.Text.UTF8Encoding $false
 $Ignored = @('desktop.ini', 'Thumbs.db')
+# Folders the launcher agrees to write into. Anything else in pack/ is not published.
+$Roots = @('mods', 'config', 'resourcepacks', 'shaderpacks')
+$BlockedFile = 'blocked-mods.txt'
 
 function Get-ModId([string]$JarPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($JarPath)
@@ -62,8 +65,13 @@ $entries = New-Object System.Collections.Generic.List[object]
 $files = Get-ChildItem $PackDir -Recurse -File |
     Where-Object { $_.Name -notlike '.*' -and $Ignored -notcontains $_.Name } |
     Sort-Object FullName
+$skipped = @()
 foreach ($file in $files) {
     $rel = $file.FullName.Substring($PackDir.Length + 1).Replace('\', '/')
+    if ($Roots -notcontains $rel.Split('/')[0] -or $rel -notlike '*/*') {
+        if ($rel -ne $BlockedFile) { $skipped += $rel }
+        continue
+    }
     $entry = [ordered]@{ path = $rel }
     if ($rel -like 'mods/*.jar') {
         $id = Get-ModId $file.FullName
@@ -74,6 +82,18 @@ foreach ($file in $files) {
     $entries.Add($entry)
 }
 if ($entries.Count -eq 0) { throw 'Le dossier pack/ est vide.' }
+if ($skipped) {
+    Write-Host ("Ignorés, car hors de " + ($Roots -join '/, ') + "/ : " + ($skipped -join ', ')) -ForegroundColor DarkYellow
+}
+
+$blocked = @()
+$blockedPath = Join-Path $PackDir $BlockedFile
+if (Test-Path $blockedPath) {
+    $blocked = @(Get-Content $blockedPath -Encoding UTF8 |
+        ForEach-Object { $_.Trim() } |
+        Where-Object { $_ -and -not $_.StartsWith('#') } |
+        Sort-Object -Unique)
+}
 
 $dupes = $entries | Where-Object { $_['modId'] } | Group-Object { $_['modId'] } | Where-Object { $_.Count -gt 1 }
 if ($dupes) {
@@ -108,7 +128,11 @@ foreach ($e in $entries) {
 }
 foreach ($p in $previous.Keys) { if (-not $present.ContainsKey($p)) { $removed += $p } }
 
-if ($current -and -not ($added -or $updated -or $removed)) {
+$previousBlocked = @()
+if ($current -and $current.blockedMods) { $previousBlocked = @($current.blockedMods | Sort-Object -Unique) }
+$blockedChanged = ($blocked -join ',') -ne ($previousBlocked -join ',')
+
+if ($current -and -not ($added -or $updated -or $removed -or $blockedChanged)) {
     Write-Host "Rien à publier : le canal $Channel est déjà à jour ($($current.version))." -ForegroundColor Green
     return
 }
@@ -127,13 +151,15 @@ $clash = $uploads | Group-Object Asset | Where-Object { $_.Count -gt 1 }
 if ($clash) { throw "Deux fichiers portent le même nom une fois envoyés sur GitHub : $($clash.Name -join ', ')" }
 
 $manifestOut = [ordered]@{
-    schema    = 1
-    channel   = $Channel
-    version   = $version
-    published = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
-    minecraft = '1.21.1'
-    loader    = 'fabric'
-    files     = $entries.ToArray()
+    schema      = 1
+    channel     = $Channel
+    version     = $version
+    published   = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
+    minecraft   = '1.21.1'
+    loader      = 'fabric'
+    notes       = @()
+    blockedMods = @($blocked)
+    files       = $entries.ToArray()
 }
 
 $uploadMb = (($uploads | Measure-Object Size -Sum).Sum) / 1MB
@@ -143,8 +169,24 @@ Write-Host "Canal $Channel : $version ($from)" -ForegroundColor Cyan
 Show-List 'Ajoutés' $added Green
 Show-List 'Modifiés' $updated Yellow
 Show-List 'Retirés' $removed Red
+if ($blockedChanged) {
+    if ($blocked) { $list = $blocked -join ', ' } else { $list = 'aucun' }
+    Write-Host "Mods retirés chez les joueurs (prod) : $list" -ForegroundColor Magenta
+}
 Write-Host ('À envoyer : {0} fichier(s), {1:N1} Mo' -f $uploads.Count, $uploadMb)
 Write-Host ''
+
+if (-not $DryRun -and -not $Yes -and $Notes.Count -eq 0) {
+    Write-Host 'Nouveautés de cette version, une par ligne. Laisse une ligne vide pour terminer :' -ForegroundColor Cyan
+    while ($true) {
+        Write-Host '  - ' -NoNewline
+        $line = Read-Host
+        if (-not $line.Trim()) { break }
+        $Notes += $line.Trim()
+    }
+    Write-Host ''
+}
+$manifestOut['notes'] = @($Notes | Where-Object { $_ -and $_.Trim() } | ForEach-Object { $_.Trim() })
 
 if ($DryRun) {
     $preview = Join-Path $Root ".preview\$Channel.json"
@@ -172,7 +214,7 @@ if ($uploads.Count -gt 0) {
     }
 
     $lines = @("Canal : $Channel", '')
-    if ($Notes) { $lines += $Notes; $lines += '' }
+    if ($manifestOut['notes']) { $lines += ($manifestOut['notes'] | ForEach-Object { "- $_" }); $lines += '' }
     if ($added) { $lines += 'Ajoutés :'; $lines += ($added | ForEach-Object { "- $_" }); $lines += '' }
     if ($updated) { $lines += 'Modifiés :'; $lines += ($updated | ForEach-Object { "- $_" }); $lines += '' }
     if ($removed) { $lines += 'Retirés :'; $lines += ($removed | ForEach-Object { "- $_" }) }
