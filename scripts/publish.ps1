@@ -14,6 +14,7 @@ try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding $false } c
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $Root = Split-Path -Parent $PSScriptRoot
+. (Join-Path $PSScriptRoot 'signing.ps1')
 $PackDir = Join-Path $Root 'pack'
 $ChannelDir = Join-Path $Root 'channels'
 $Utf8NoBom = New-Object System.Text.UTF8Encoding $false
@@ -230,6 +231,7 @@ if (-not $Yes) {
     if ($answer -notmatch '^[oOyY]') { Write-Host 'Annulé.'; return }
 }
 
+Assert-Signing
 $login = gh api user --jq .login
 if ($LASTEXITCODE -ne 0) { throw "GitHub CLI n'est pas connecté : lance « gh auth login »." }
 
@@ -267,7 +269,7 @@ if ($uploads.Count -gt 0) {
     Remove-Item $staging -Recurse -Force -ErrorAction SilentlyContinue
 }
 
-Write-Json $manifestOut (Join-Path $ChannelDir "$Channel.json")
+Write-SignedManifest $manifestOut (Join-Path $ChannelDir "$Channel.json")
 git -C $Root add -A
 Assert-LastExit 'git add'
 git -C $Root commit --quiet -m "Publie $version sur $Channel"

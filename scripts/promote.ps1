@@ -4,6 +4,7 @@ $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding $false } catch { }
 
 $Root = Split-Path -Parent $PSScriptRoot
+. (Join-Path $PSScriptRoot 'signing.ps1')
 $DevPath = Join-Path $Root 'channels\dev.json'
 $ProdPath = Join-Path $Root 'channels\prod.json'
 $Utf8NoBom = New-Object System.Text.UTF8Encoding $false
@@ -31,10 +32,11 @@ if (-not $Yes) {
     if ($answer -notmatch '^[oOyY]') { Write-Host 'Annulé.'; return }
 }
 
+Assert-Signing
 $dev.channel = 'prod'
-[System.IO.File]::WriteAllText($ProdPath, ($dev | ConvertTo-Json -Depth 6), $Utf8NoBom)
+Write-SignedManifest $dev $ProdPath
 
-git -C $Root add channels/prod.json
+git -C $Root add channels/prod.json channels/prod.json.sig
 Assert-LastExit 'git add'
 git -C $Root commit --quiet -m "Passe $($dev.version) en prod"
 Assert-LastExit 'git commit'

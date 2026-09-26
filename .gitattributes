@@ -1,0 +1,2 @@
+# Les manifestes sont signés octet par octet : Git ne doit pas toucher à leurs fins de ligne.
+channels/** -text
