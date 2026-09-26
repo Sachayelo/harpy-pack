@@ -1,12 +1,12 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.09.26-2",
-    "published":  "2026-09-25T23:42:49Z",
+    "version":  "2026.09.26-3",
+    "published":  "2026-09-26T02:09:40Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
-                  "*"
+
               ],
     "blockedMods":  [
                         "freecam"
@@ -156,11 +156,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__starry-express_V1.3.jar"
                   },
                   {
-                      "path":  "mods/stupid-express_V1.3.jar",
+                      "path":  "mods/stupid-express_V1.4.jar",
                       "modId":  "stupid_express",
-                      "sha256":  "79737fa1f4c3f1a8fb23fbd4b06efdbc6e597170d641051aaabaa4355e96b17d",
-                      "size":  144622,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__stupid-express_V1.3.jar"
+                      "sha256":  "3f1a4302d9ec2a306583284c80bcd60ce34819b76a5b6392200daa3f60c482e6",
+                      "size":  143915,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-3/mods__stupid-express_V1.4.jar"
                   },
                   {
                       "path":  "mods/voicechat-fabric-1.21.1-2.6.17.jar",
@@ -184,11 +184,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_V1.3.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.40.jar",
+                      "path":  "mods/WatheExtended_V1.41.jar",
                       "modId":  "watheextended",
-                      "sha256":  "83135749544bfeea0678a7bfdea408afc79151ae9d5847bace4ab335cfb5acfa",
-                      "size":  34450969,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__WatheExtended_V1.40.jar"
+                      "sha256":  "bb78daed32d39ad4ef596d699f7f8323f46cc1ec4bcb74e045d71feb8cd7cd92",
+                      "size":  34451977,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-3/mods__WatheExtended_V1.41.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
