@@ -1,6 +1,7 @@
 ﻿param([switch]$Yes)
 
 $ErrorActionPreference = 'Stop'
+try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding $false } catch { }
 
 $Root = Split-Path -Parent $PSScriptRoot
 $DevPath = Join-Path $Root 'channels\dev.json'

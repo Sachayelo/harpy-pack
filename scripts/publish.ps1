@@ -2,11 +2,15 @@
     [ValidateSet('dev', 'prod')]
     [string]$Channel = 'dev',
     [string[]]$Notes = @(),
+    [string]$NotesFile = '',
     [switch]$DryRun,
-    [switch]$Yes
+    [switch]$Yes,
+    # Machine-readable summary for the launcher's workshop (used with -DryRun).
+    [switch]$Json
 )
 
 $ErrorActionPreference = 'Stop'
+try { [Console]::OutputEncoding = New-Object System.Text.UTF8Encoding $false } catch { }
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $Root = Split-Path -Parent $PSScriptRoot
@@ -17,6 +21,14 @@ $Ignored = @('desktop.ini', 'Thumbs.db')
 # Folders the launcher agrees to write into. Anything else in pack/ is not published.
 $Roots = @('mods', 'config', 'resourcepacks', 'shaderpacks')
 $BlockedFile = 'blocked-mods.txt'
+
+if ($NotesFile) {
+    $Notes = @(Get-Content $NotesFile -Encoding UTF8 | ForEach-Object { $_.Trim() } | Where-Object { $_ })
+}
+
+function Write-Summary($Summary) {
+    Write-Output ('HARPY_JSON:' + ($Summary | ConvertTo-Json -Compress -Depth 4))
+}
 
 function Get-ModId([string]$JarPath) {
     $zip = [System.IO.Compression.ZipFile]::OpenRead($JarPath)
@@ -133,6 +145,10 @@ if ($current -and $current.blockedMods) { $previousBlocked = @($current.blockedM
 $blockedChanged = ($blocked -join ',') -ne ($previousBlocked -join ',')
 
 if ($current -and -not ($added -or $updated -or $removed -or $blockedChanged)) {
+    if ($Json) {
+        Write-Summary ([ordered]@{ version = $current.version; nothing = $true })
+        return
+    }
     Write-Host "Rien à publier : le canal $Channel est déjà à jour ($($current.version))." -ForegroundColor Green
     return
 }
@@ -189,6 +205,20 @@ if (-not $DryRun -and -not $Yes -and $Notes.Count -eq 0) {
 $manifestOut['notes'] = @($Notes | Where-Object { $_ -and $_.Trim() } | ForEach-Object { $_.Trim() })
 
 if ($DryRun) {
+    if ($Json) {
+        Write-Summary ([ordered]@{
+            version        = $version
+            nothing        = $false
+            added          = @($added)
+            updated        = @($updated)
+            removed        = @($removed)
+            blocked        = @($blocked)
+            blockedChanged = $blockedChanged
+            uploadFiles    = $uploads.Count
+            uploadBytes    = [int64](($uploads | Measure-Object Size -Sum).Sum)
+        })
+        return
+    }
     $preview = Join-Path $Root ".preview\$Channel.json"
     Write-Json $manifestOut $preview
     Write-Host "Simulation : rien n'a été envoyé. Aperçu du manifeste : $preview" -ForegroundColor Cyan
