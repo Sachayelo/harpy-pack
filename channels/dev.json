@@ -1,12 +1,12 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.09.26-3",
-    "published":  "2026-09-26T02:09:40Z",
+    "version":  "2026.09.26-4",
+    "published":  "2026-09-26T14:24:41Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
-
+                  "Les Lags serveur devrait être considérablement réduit !"
               ],
     "blockedMods":  [
                         "freecam"
@@ -177,11 +177,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_blood-1.1.4_1.21.1.jar"
                   },
                   {
-                      "path":  "mods/wathe_V1.3.jar",
+                      "path":  "mods/wathe_V1.4.jar",
                       "modId":  "wathe",
-                      "sha256":  "e89919c6528c8b1a3a8d56003740b68c93b68aef1106bc8a3ef6d3380b1c20ae",
-                      "size":  9662457,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_V1.3.jar"
+                      "sha256":  "8cc2b089772ba016f1ffa425e8fc1bc49de897d07b851114a1665a0fb0de0020",
+                      "size":  9664417,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-4/mods__wathe_V1.4.jar"
                   },
                   {
                       "path":  "mods/WatheExtended_V1.41.jar",
