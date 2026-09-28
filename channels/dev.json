@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.09.28-6",
-    "published":  "2026-09-28T17:21:09Z",
+    "version":  "2026.09.28-7",
+    "published":  "2026-09-28T21:15:50Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -72,11 +72,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.24.jar",
+                      "path":  "mods/Gexpress_V1.26.jar",
                       "modId":  "gexpress",
-                      "sha256":  "bb4489131288dd14abd295004f5a943e4d18aa85ffda1006c80aecd6ca5c1d88",
-                      "size":  1784729,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-6/mods__Gexpress_V1.24.jar"
+                      "sha256":  "6d3206d8ab1feb58ed578eac4aba4bf7d98884179e5d7f0aebcd189e2d2081da",
+                      "size":  1790210,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-7/mods__Gexpress_V1.26.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
@@ -107,11 +107,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__lithium-fabric-0.15.3_mc1.21.1.jar"
                   },
                   {
-                      "path":  "mods/noellesroles_V1.30.jar",
+                      "path":  "mods/noellesroles_V1.31.jar",
                       "modId":  "noellesroles",
-                      "sha256":  "4c4f8613312486aa71af6ebf3fbdc6a9654a5b5431ec9b0fd9e9678da0afcdb0",
-                      "size":  4298057,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-6/mods__noellesroles_V1.30.jar"
+                      "sha256":  "4aa9251c7b18820c2d88cb417b39c35a6508323d8a1bce430bee97d864deca94",
+                      "size":  4298041,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-7/mods__noellesroles_V1.31.jar"
                   },
                   {
                       "path":  "mods/owo-lib-0.13.0-alpha.15+1.21.jar",
@@ -184,11 +184,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-3/mods__wathe_V1.9.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.43.jar",
+                      "path":  "mods/WatheExtended_V1.44.jar",
                       "modId":  "watheextended",
-                      "sha256":  "e05c99988b2ef459db3af67b8088df34da346eabdb26da3f309ee68435d62cf5",
-                      "size":  34452490,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-5/mods__WatheExtended_V1.43.jar"
+                      "sha256":  "0d1afa6ad5a4ee254af605799becf9fbabc79b4169ce771447e44e45460b936e",
+                      "size":  34452672,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-7/mods__WatheExtended_V1.44.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
