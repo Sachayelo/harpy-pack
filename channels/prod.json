@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.09.27-5",
-    "published":  "2026-09-27T21:30:13Z",
+    "version":  "2026.09.28-5",
+    "published":  "2026-09-28T16:14:08Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -107,11 +107,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__lithium-fabric-0.15.3_mc1.21.1.jar"
                   },
                   {
-                      "path":  "mods/noellesroles_V1.26.jar",
+                      "path":  "mods/noellesroles_V1.29.jar",
                       "modId":  "noellesroles",
-                      "sha256":  "542fb82cb4cd87c7b34087f6cf86d45eeb051dca2659e716316e9914747e1f8c",
-                      "size":  842910,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__noellesroles_V1.26.jar"
+                      "sha256":  "f28bb54661e86f9450997a6b3e14ffea04c6cfb57fad321f8b666731534bfc21",
+                      "size":  4297870,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-5/mods__noellesroles_V1.29.jar"
                   },
                   {
                       "path":  "mods/owo-lib-0.13.0-alpha.15+1.21.jar",
@@ -177,18 +177,18 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_blood-1.1.4_1.21.1.jar"
                   },
                   {
-                      "path":  "mods/wathe_V1.6.jar",
+                      "path":  "mods/wathe_V1.9.jar",
                       "modId":  "wathe",
-                      "sha256":  "c61aaf47c427d9a0d7966479922873c8e9f3fd53cf33d5b90a782fdcf57e4af7",
-                      "size":  9664454,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.27-2/mods__wathe_V1.6.jar"
+                      "sha256":  "5849ec91b5abcbf38b4bfdafbf4df64336aaa254f7ce6fb0c85eb64e42a8a0c6",
+                      "size":  9670107,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-3/mods__wathe_V1.9.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.42.jar",
+                      "path":  "mods/WatheExtended_V1.43.jar",
                       "modId":  "watheextended",
-                      "sha256":  "9cac1c50410114278a89cf1a54e4569f29ad90c32a25e057091c07f25f05b531",
-                      "size":  34451996,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.27-2/mods__WatheExtended_V1.42.jar"
+                      "sha256":  "e05c99988b2ef459db3af67b8088df34da346eabdb26da3f309ee68435d62cf5",
+                      "size":  34452490,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-5/mods__WatheExtended_V1.43.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
