@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.09.28-2",
-    "published":  "2026-09-28T10:01:51Z",
+    "version":  "2026.09.28-3",
+    "published":  "2026-09-28T10:18:03Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -177,11 +177,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__wathe_blood-1.1.4_1.21.1.jar"
                   },
                   {
-                      "path":  "mods/wathe_V1.8.jar",
+                      "path":  "mods/wathe_V1.9.jar",
                       "modId":  "wathe",
-                      "sha256":  "390557f46279df8eb0d362e898229ac9bdc90369a54db3b15a8eb4cf48ee6195",
-                      "size":  9670088,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-2/mods__wathe_V1.8.jar"
+                      "sha256":  "5849ec91b5abcbf38b4bfdafbf4df64336aaa254f7ce6fb0c85eb64e42a8a0c6",
+                      "size":  9670107,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-3/mods__wathe_V1.9.jar"
                   },
                   {
                       "path":  "mods/WatheExtended_V1.42.jar",
