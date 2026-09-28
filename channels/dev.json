@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.09.28-3",
-    "published":  "2026-09-28T10:18:03Z",
+    "version":  "2026.09.28-4",
+    "published":  "2026-09-28T11:44:43Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -107,11 +107,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__lithium-fabric-0.15.3_mc1.21.1.jar"
                   },
                   {
-                      "path":  "mods/noellesroles_V1.26.jar",
+                      "path":  "mods/noellesroles_V1.27.jar",
                       "modId":  "noellesroles",
-                      "sha256":  "542fb82cb4cd87c7b34087f6cf86d45eeb051dca2659e716316e9914747e1f8c",
-                      "size":  842910,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__noellesroles_V1.26.jar"
+                      "sha256":  "3e5a599b0e588ad8fe6a7fb4409b6ee90d0d1792d3ec13de787200e7e603240c",
+                      "size":  4291955,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.28-4/mods__noellesroles_V1.27.jar"
                   },
                   {
                       "path":  "mods/owo-lib-0.13.0-alpha.15+1.21.jar",
