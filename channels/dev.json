@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.09.30-1",
-    "published":  "2026-09-30T09:13:49Z",
+    "version":  "2026.09.30-2",
+    "published":  "2026-09-30T11:10:03Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -72,11 +72,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.40.jar",
+                      "path":  "mods/Gexpress_V1.41.jar",
                       "modId":  "gexpress",
-                      "sha256":  "743f71a8e756ec4484f3b116a80489e9193ffd4248db86753ae3668577048c6c",
-                      "size":  2500121,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.30-1/mods__Gexpress_V1.40.jar"
+                      "sha256":  "13a94a470aa15d973fa923e0290face2d151c4f36c7738ff90d5077609dc23bb",
+                      "size":  2497781,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.30-2/mods__Gexpress_V1.41.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
