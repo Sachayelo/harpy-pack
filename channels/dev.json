@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.06-7",
-    "published":  "2026-10-06T18:07:20Z",
+    "version":  "2026.10.06-8",
+    "published":  "2026-10-06T18:25:53Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -184,11 +184,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-7/mods__wathe_V1.11.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.45.jar",
+                      "path":  "mods/WatheExtended_V1.46.jar",
                       "modId":  "watheextended",
-                      "sha256":  "af2017e692e64ae83c3a505a5af0e29fbceeeb31d9eb6cb2c6de3b9ed8553e16",
-                      "size":  34452716,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-7/mods__WatheExtended_V1.45.jar"
+                      "sha256":  "eb7cc122ff30945dfb422534c28719db2f73308c8a35f87fb61c1f9aded1bc8d",
+                      "size":  34453743,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-8/mods__WatheExtended_V1.46.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
