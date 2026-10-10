@@ -1,8 +1,8 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.10-2",
-    "published":  "2026-10-10T14:10:02Z",
+    "version":  "2026.10.10-3",
+    "published":  "2026-10-10T14:49:55Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
@@ -72,11 +72,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.82.jar",
+                      "path":  "mods/Gexpress_V1.83.jar",
                       "modId":  "gexpress",
-                      "sha256":  "3c6282b71f88a7eac352ce39dd10ba580b5a137a565b5749d1d63361d28b7069",
-                      "size":  8006860,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.10-2/mods__Gexpress_V1.82.jar"
+                      "sha256":  "969a873061e18d8e0efc4cb232aad2144ba60a8eb8990b93aae4bd46d75f63c6",
+                      "size":  8053244,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.10-3/mods__Gexpress_V1.83.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
@@ -184,11 +184,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-7/mods__wathe_V1.11.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.47.jar",
+                      "path":  "mods/WatheExtended_V1.48.jar",
                       "modId":  "watheextended",
-                      "sha256":  "6ba47b2bfbae11860bae709f30f7a5d252077c2ec8b99a02e69b1a70aa9ffca3",
-                      "size":  34453858,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.08-1/mods__WatheExtended_V1.47.jar"
+                      "sha256":  "3c3a2ad6e08bd2381fe58e6fd706074b4a72c03af5aa419631eb00a5308464fc",
+                      "size":  34465781,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.10-3/mods__WatheExtended_V1.48.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
