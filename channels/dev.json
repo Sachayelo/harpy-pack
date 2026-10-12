@@ -1,12 +1,14 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.12-2",
-    "published":  "2026-10-12T09:54:36Z",
+    "version":  "2026.10.12-3",
+    "published":  "2026-10-12T11:49:20Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
-
+                  "Pack Twitch Tier 1 Splatoon : Liquidateur Jr. en vraie 3D",
+                  "Succès et maîtrises : clic pour voir tous les niveaux et leurs récompenses",
+                  "Guide : pages niveaux des succès/maîtrises et abonnés Twitch"
               ],
     "blockedMods":  [
                         "freecam"
@@ -72,11 +74,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.86.jar",
+                      "path":  "mods/Gexpress_V1.87.jar",
                       "modId":  "gexpress",
-                      "sha256":  "76464a7c5f347baa71fcad5be682915aa407e8ac5b9dca65818425471fda9da3",
-                      "size":  8956319,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-2/mods__Gexpress_V1.86.jar"
+                      "sha256":  "b5e4c6cfc6b844a0868529782e6384f667fb05635b45cd85fcd3be1abbd020c5",
+                      "size":  8928235,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-3/mods__Gexpress_V1.87.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
