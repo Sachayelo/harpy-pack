@@ -1,12 +1,14 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.11-1",
-    "published":  "2026-10-11T14:33:24Z",
+    "version":  "2026.10.12-1",
+    "published":  "2026-10-12T09:01:05Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
-
+                  "Nouveau bundle des abonnés Twitch Tier 3 : The Legend of Zelda (Master Sword, Arc de lumière, Baguette du Vent, fées, finisher Triforce...)",
+                  "Le revolver du bundle Undertale × Deltarune devient le Revolver de Yellow, avec un nouveau bruit de tir",
+                  "Le Trickster et le Puppetmaster voient enfin combien d\u0027utilisations il leur reste"
               ],
     "blockedMods":  [
                         "freecam"
@@ -72,11 +74,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.84.jar",
+                      "path":  "mods/Gexpress_V1.85.jar",
                       "modId":  "gexpress",
-                      "sha256":  "113ae5b3aa06b7eff1de7fef31f5ed8b32f3c45cb468123d671ecac45456fb51",
-                      "size":  8061473,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.11-1/mods__Gexpress_V1.84.jar"
+                      "sha256":  "ccce84a5f788846e9024d77d73205e522a07e4692e489c8169cd874f9c598668",
+                      "size":  8533251,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-1/mods__Gexpress_V1.85.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
