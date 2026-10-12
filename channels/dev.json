@@ -1,14 +1,14 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.12-3",
-    "published":  "2026-10-12T11:49:20Z",
+    "version":  "2026.10.12-4",
+    "published":  "2026-10-12T14:23:44Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "notes":  [
-                  "Pack Twitch Tier 1 Splatoon : Liquidateur Jr. en vraie 3D",
-                  "Succès et maîtrises : clic pour voir tous les niveaux et leurs récompenses",
-                  "Guide : pages niveaux des succès/maîtrises et abonnés Twitch"
+                  "Pack Twitch Tier 2 Overwatch : katana de Genji, pistolet de D.Va en 3D, objets, carte Busan avec le MEKA",
+                  "Effet d\u0027élimination, fragments de bouclier, nom Overwatch, titre Action de la partie",
+                  "Guide : packs Twitch Tier 1, 2 et 3"
               ],
     "blockedMods":  [
                         "freecam"
@@ -74,11 +74,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.87.jar",
+                      "path":  "mods/Gexpress_V1.88.jar",
                       "modId":  "gexpress",
-                      "sha256":  "b5e4c6cfc6b844a0868529782e6384f667fb05635b45cd85fcd3be1abbd020c5",
-                      "size":  8928235,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-3/mods__Gexpress_V1.87.jar"
+                      "sha256":  "026a7fb20d5caf6862287f18636d903c6c7f6663376938c276d954d33a8ddcf5",
+                      "size":  9355902,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-4/mods__Gexpress_V1.88.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
