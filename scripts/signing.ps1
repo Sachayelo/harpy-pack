@@ -21,6 +21,6 @@ function Protect-Manifest([string]$Path) {
 
 function Write-SignedManifest($Object, [string]$Path) {
     New-Item -ItemType Directory -Force (Split-Path $Path) | Out-Null
-    [System.IO.File]::WriteAllText($Path, ($Object | ConvertTo-Json -Depth 6), (New-Object System.Text.UTF8Encoding $false))
+    [System.IO.File]::WriteAllText($Path, ($Object | ConvertTo-Json -Depth 10), (New-Object System.Text.UTF8Encoding $false))
     Protect-Manifest $Path
 }

@@ -3,6 +3,8 @@
     [string]$Channel = 'dev',
     [string[]]$Notes = @(),
     [string]$NotesFile = '',
+    # Note de version écrite dans l'atelier du launcher : { title, image, changes: [{ kind, text }] }.
+    [string]$ChangesFile = '',
     [switch]$DryRun,
     [switch]$Yes,
     # Machine-readable summary for the launcher's workshop (used with -DryRun).
@@ -15,6 +17,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $Root = Split-Path -Parent $PSScriptRoot
 . (Join-Path $PSScriptRoot 'signing.ps1')
+. (Join-Path $PSScriptRoot 'releases.ps1')
 $PackDir = Join-Path $Root 'pack'
 $ChannelDir = Join-Path $Root 'channels'
 $Utf8NoBom = New-Object System.Text.UTF8Encoding $false
@@ -22,6 +25,9 @@ $Ignored = @('desktop.ini', 'Thumbs.db')
 # Folders the launcher agrees to write into. Anything else in pack/ is not published.
 $Roots = @('mods', 'config', 'resourcepacks', 'shaderpacks')
 $BlockedFile = 'blocked-mods.txt'
+# Version minimale de Fabric Loader qu'exigent les mods du pack : les launchers
+# autres que Lunar installent celle-ci.
+$LoaderVersion = '0.18.4'
 
 if ($NotesFile) {
     $Notes = @(Get-Content $NotesFile -Encoding UTF8 | ForEach-Object { $_.Trim() } | Where-Object { $_ })
@@ -174,7 +180,10 @@ $manifestOut = [ordered]@{
     published   = (Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')
     minecraft   = '1.21.1'
     loader      = 'fabric'
+    loaderVersion = $LoaderVersion
     notes       = @()
+    changes     = @()
+    history     = Get-History $current
     blockedMods = @($blocked)
     files       = $entries.ToArray()
 }
@@ -193,8 +202,9 @@ if ($blockedChanged) {
 Write-Host ('À envoyer : {0} fichier(s), {1:N1} Mo' -f $uploads.Count, $uploadMb)
 Write-Host ''
 
-if (-not $DryRun -and -not $Yes -and $Notes.Count -eq 0) {
+if (-not $DryRun -and -not $Yes -and $Notes.Count -eq 0 -and -not $ChangesFile) {
     Write-Host 'Nouveautés de cette version, une par ligne. Laisse une ligne vide pour terminer :' -ForegroundColor Cyan
+    Write-Host '(commence par « Correctif : » ou « Équilibrage : » pour changer de catégorie)' -ForegroundColor DarkGray
     while ($true) {
         Write-Host '  - ' -NoNewline
         $line = Read-Host
@@ -203,7 +213,17 @@ if (-not $DryRun -and -not $Yes -and $Notes.Count -eq 0) {
     }
     Write-Host ''
 }
-$manifestOut['notes'] = @($Notes | Where-Object { $_ -and $_.Trim() } | ForEach-Object { $_.Trim() })
+if ($ChangesFile) {
+    $release = Read-ReleaseNotes $ChangesFile
+} else {
+    $release = [ordered]@{ title = ''; image = ''; changes = (ConvertTo-Changes $Notes) }
+}
+# Juste après la date, pour qu'on lise la note en ouvrant le manifeste.
+if ($release.image) { $manifestOut.Insert(4, 'image', $release.image) }
+if ($release.title) { $manifestOut.Insert(4, 'title', $release.title) }
+$manifestOut['changes'] = $release.changes
+# Les launchers d'avant les catégories n'affichent que ces lignes.
+$manifestOut['notes'] = @($release.changes | ForEach-Object { $_.text })
 
 if ($DryRun) {
     if ($Json) {
@@ -246,7 +266,8 @@ if ($uploads.Count -gt 0) {
     }
 
     $lines = @("Canal : $Channel", '')
-    if ($manifestOut['notes']) { $lines += ($manifestOut['notes'] | ForEach-Object { "- $_" }); $lines += '' }
+    if ($release.title) { $lines += "# $($release.title)"; $lines += '' }
+    $lines += (Format-Changes $release.changes)
     if ($added) { $lines += 'Ajoutés :'; $lines += ($added | ForEach-Object { "- $_" }); $lines += '' }
     if ($updated) { $lines += 'Modifiés :'; $lines += ($updated | ForEach-Object { "- $_" }); $lines += '' }
     if ($removed) { $lines += 'Retirés :'; $lines += ($removed | ForEach-Object { "- $_" }) }
