@@ -1,13 +1,29 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.12-6",
-    "published":  "2026-10-12T17:22:04Z",
+    "version":  "2026.10.14-1",
+    "published":  "2026-10-14T16:33:23Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
+    "loaderVersion":  "0.18.4",
     "notes":  [
-
+                  "Better Modération"
               ],
+    "changes":  [
+                    {
+                        "kind":  "new",
+                        "text":  "Better Modération"
+                    }
+                ],
+    "history":  [
+                    {
+                        "version":  "2026.10.12-6",
+                        "published":  "2026-10-12T17:22:04Z",
+                        "changes":  [
+
+                                    ]
+                    }
+                ],
     "blockedMods":  [
                         "freecam"
                     ],
@@ -72,11 +88,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.90.jar",
+                      "path":  "mods/Gexpress_V1.91.jar",
                       "modId":  "gexpress",
-                      "sha256":  "083ec3ee86285cc81fd593cccd4e0b74e5ac814602ba08e0774788e13f146f1e",
-                      "size":  9375662,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.12-6/mods__Gexpress_V1.90.jar"
+                      "sha256":  "d6f1e861790600ea74c6f05521c911778efa68aab9989fae092cf8f2444e6429",
+                      "size":  9331733,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.14-1/mods__Gexpress_V1.91.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
