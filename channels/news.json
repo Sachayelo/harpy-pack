@@ -1,17 +1,10 @@
 {
     "schema":  1,
-    "updated":  "2026-10-15T17:53:27Z",
+    "updated":  "2026-10-15T18:04:39Z",
     "twitch":  [
-                   "sachayelo",
-                   "theguill84"
+                   "sachayelo"
                ],
     "announcements":  [
-                          {
-                              "id":  "7cbe0a52414b",
-                              "kind":  "event",
-                              "title":  "Lol",
-                              "text":  "C\u0027(est vraiment lol",
-                              "audience":  "all"
-                          }
+
                       ]
 }
