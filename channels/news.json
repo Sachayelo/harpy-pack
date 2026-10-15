@@ -1,6 +1,6 @@
 {
     "schema":  1,
-    "updated":  "2026-10-15T18:08:12Z",
+    "updated":  "2026-10-15T18:08:19Z",
     "twitch":  [
                    "sachayelo",
                    "shinaza_san",
@@ -12,7 +12,7 @@
                               "id":  "c92f384961d3",
                               "kind":  "event",
                               "title":  "Bundle Halloween",
-                              "text":  "Le bundle Halloween est disponible jusqu\u0027au 2 Novembre pour 2200 Harpyz",
+                              "text":  "Le bundle Halloween est disponible jusqu\u0027au 2 Novembre pour 2200 Harpyz !",
                               "audience":  "all",
                               "until":  "2026-11-02"
                           }
