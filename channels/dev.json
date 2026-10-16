@@ -1,21 +1,28 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.17-1",
-    "published":  "2026-10-16T23:17:42Z",
+    "version":  "2026.10.17-2",
+    "published":  "2026-10-16T23:34:34Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "loaderVersion":  "0.18.4",
     "notes":  [
-                  "Fix bug"
+
               ],
     "changes":  [
-                    {
-                        "kind":  "new",
-                        "text":  "Fix bug"
-                    }
+
                 ],
     "history":  [
+                    {
+                        "version":  "2026.10.17-1",
+                        "published":  "2026-10-16T23:17:42Z",
+                        "changes":  [
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Fix bug"
+                                        }
+                                    ]
+                    },
                     {
                         "version":  "2026.10.16-1",
                         "published":  "2026-10-16T16:20:21Z",
@@ -108,11 +115,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.93.jar",
+                      "path":  "mods/Gexpress_V1.94.jar",
                       "modId":  "gexpress",
-                      "sha256":  "f450d34e5a582d1bc4e555b5dbb1f8c6a5153f1941fb42d9355067f236cbb000",
-                      "size":  9357913,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.17-1/mods__Gexpress_V1.93.jar"
+                      "sha256":  "3234cb7dc924484870dbccd2952bac73fdfb1e57652abeba3349a74f34b1b168",
+                      "size":  9357592,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.17-2/mods__Gexpress_V1.94.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
