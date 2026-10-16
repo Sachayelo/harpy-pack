@@ -1,13 +1,46 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.10.06-8",
-    "published":  "2026-10-06T18:25:53Z",
+    "version":  "2026.10.16-1",
+    "published":  "2026-10-16T16:42:21Z",
+    "title":  "Flex \u0026 Swag Update",
+    "image":  "https://raw.githubusercontent.com/Sachayelo/harpy-pack/main/news/1792168840-banni-re-launcher---flex---swag-update.jpg",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
+    "loaderVersion":  "0.18.4",
     "notes":  [
-
+                  "La Nouvelle Flex and Swag Update est disponible pour tous !",
+                  "Avec un nouveau système de progression et de Skin !",
+                  "De futur patch notes sont encore prévu alors soyez indulgent !",
+                  "Mesdames Messieurs bon voyage !"
               ],
+    "changes":  [
+                    {
+                        "kind":  "new",
+                        "text":  "La Nouvelle Flex and Swag Update est disponible pour tous !"
+                    },
+                    {
+                        "kind":  "new",
+                        "text":  "Avec un nouveau système de progression et de Skin !"
+                    },
+                    {
+                        "kind":  "new",
+                        "text":  "De futur patch notes sont encore prévu alors soyez indulgent !"
+                    },
+                    {
+                        "kind":  "new",
+                        "text":  "Mesdames Messieurs bon voyage !"
+                    }
+                ],
+    "history":  [
+                    {
+                        "version":  "2026.10.06-8",
+                        "published":  "2026-10-06T18:25:53Z",
+                        "changes":  [
+
+                                    ]
+                    }
+                ],
     "blockedMods":  [
                         "freecam"
                     ],
@@ -72,11 +105,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.61.jar",
+                      "path":  "mods/Gexpress_V1.92.jar",
                       "modId":  "gexpress",
-                      "sha256":  "be8394eff355db52e8bf5129798d8d9a5d211aced1512f40de3714147fee65fd",
-                      "size":  5294276,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-7/mods__Gexpress_V1.61.jar"
+                      "sha256":  "396ca861146577768629c8f67ca70864815ef2a5bbdbd717218d1aa6cf770685",
+                      "size":  9332220,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.16-1/mods__Gexpress_V1.92.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
@@ -184,11 +217,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-7/mods__wathe_V1.11.jar"
                   },
                   {
-                      "path":  "mods/WatheExtended_V1.46.jar",
+                      "path":  "mods/WatheExtended_V1.48.jar",
                       "modId":  "watheextended",
-                      "sha256":  "eb7cc122ff30945dfb422534c28719db2f73308c8a35f87fb61c1f9aded1bc8d",
-                      "size":  34453743,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.06-8/mods__WatheExtended_V1.46.jar"
+                      "sha256":  "3c3a2ad6e08bd2381fe58e6fd706074b4a72c03af5aa419631eb00a5308464fc",
+                      "size":  34465781,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.10-3/mods__WatheExtended_V1.48.jar"
                   },
                   {
                       "path":  "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
