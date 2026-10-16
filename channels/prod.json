@@ -1,38 +1,55 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.10.16-1",
-    "published":  "2026-10-16T16:42:21Z",
-    "title":  "Flex \u0026 Swag Update",
-    "image":  "https://raw.githubusercontent.com/Sachayelo/harpy-pack/main/news/1792168840-banni-re-launcher---flex---swag-update.jpg",
+    "version":  "2026.10.17-2",
+    "published":  "2026-10-16T23:35:54Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "loaderVersion":  "0.18.4",
     "notes":  [
-                  "La Nouvelle Flex and Swag Update est disponible pour tous !",
-                  "Avec un nouveau système de progression et de Skin !",
-                  "De futur patch notes sont encore prévu alors soyez indulgent !",
-                  "Mesdames Messieurs bon voyage !"
+                  "Fix bug",
+                  "Meilleur Interface Locker et Shop",
+                  "Allignement Visuel des capacités sur tout les roles"
               ],
     "changes":  [
                     {
                         "kind":  "new",
-                        "text":  "La Nouvelle Flex and Swag Update est disponible pour tous !"
+                        "text":  "Fix bug"
                     },
                     {
                         "kind":  "new",
-                        "text":  "Avec un nouveau système de progression et de Skin !"
+                        "text":  "Meilleur Interface Locker et Shop"
                     },
                     {
                         "kind":  "new",
-                        "text":  "De futur patch notes sont encore prévu alors soyez indulgent !"
-                    },
-                    {
-                        "kind":  "new",
-                        "text":  "Mesdames Messieurs bon voyage !"
+                        "text":  "Allignement Visuel des capacités sur tout les roles"
                     }
                 ],
     "history":  [
+                    {
+                        "version":  "2026.10.16-1",
+                        "published":  "2026-10-16T16:42:21Z",
+                        "title":  "Flex \u0026 Swag Update",
+                        "image":  "https://raw.githubusercontent.com/Sachayelo/harpy-pack/main/news/1792168840-banni-re-launcher---flex---swag-update.jpg",
+                        "changes":  [
+                                        {
+                                            "kind":  "new",
+                                            "text":  "La Nouvelle Flex and Swag Update est disponible pour tous !"
+                                        },
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Avec un nouveau système de progression et de Skin !"
+                                        },
+                                        {
+                                            "kind":  "new",
+                                            "text":  "De futur patch notes sont encore prévu alors soyez indulgent !"
+                                        },
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Mesdames Messieurs bon voyage !"
+                                        }
+                                    ]
+                    },
                     {
                         "version":  "2026.10.06-8",
                         "published":  "2026-10-06T18:25:53Z",
@@ -105,11 +122,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.92.jar",
+                      "path":  "mods/Gexpress_V1.94.jar",
                       "modId":  "gexpress",
-                      "sha256":  "396ca861146577768629c8f67ca70864815ef2a5bbdbd717218d1aa6cf770685",
-                      "size":  9332220,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.16-1/mods__Gexpress_V1.92.jar"
+                      "sha256":  "3234cb7dc924484870dbccd2952bac73fdfb1e57652abeba3349a74f34b1b168",
+                      "size":  9357592,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.17-2/mods__Gexpress_V1.94.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
