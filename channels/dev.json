@@ -1,21 +1,31 @@
 {
     "schema":  1,
     "channel":  "dev",
-    "version":  "2026.10.14-1",
-    "published":  "2026-10-14T16:33:23Z",
+    "version":  "2026.10.16-1",
+    "published":  "2026-10-16T16:20:21Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "loaderVersion":  "0.18.4",
     "notes":  [
-                  "Better Modération"
+                  "Better Cosmétique"
               ],
     "changes":  [
                     {
                         "kind":  "new",
-                        "text":  "Better Modération"
+                        "text":  "Better Cosmétique"
                     }
                 ],
     "history":  [
+                    {
+                        "version":  "2026.10.14-1",
+                        "published":  "2026-10-14T16:33:23Z",
+                        "changes":  [
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Better Modération"
+                                        }
+                                    ]
+                    },
                     {
                         "version":  "2026.10.12-6",
                         "published":  "2026-10-12T17:22:04Z",
@@ -88,11 +98,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.91.jar",
+                      "path":  "mods/Gexpress_V1.92.jar",
                       "modId":  "gexpress",
-                      "sha256":  "d6f1e861790600ea74c6f05521c911778efa68aab9989fae092cf8f2444e6429",
-                      "size":  9331733,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.14-1/mods__Gexpress_V1.91.jar"
+                      "sha256":  "396ca861146577768629c8f67ca70864815ef2a5bbdbd717218d1aa6cf770685",
+                      "size":  9332220,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.16-1/mods__Gexpress_V1.92.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
