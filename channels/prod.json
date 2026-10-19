@@ -1,31 +1,39 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.10.17-2",
-    "published":  "2026-10-16T23:35:54Z",
+    "version":  "2026.10.19-1",
+    "published":  "2026-10-19T17:49:25Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "loaderVersion":  "0.18.4",
     "notes":  [
-                  "Fix bug",
-                  "Meilleur Interface Locker et Shop",
-                  "Allignement Visuel des capacités sur tout les roles"
+                  "Nécromancien – la touche de capacité ressuscite le corps visé, avec sa barre et son icône comme les autres rôles, et un message quand c\u0027est impossible"
               ],
     "changes":  [
                     {
-                        "kind":  "new",
-                        "text":  "Fix bug"
-                    },
-                    {
-                        "kind":  "new",
-                        "text":  "Meilleur Interface Locker et Shop"
-                    },
-                    {
-                        "kind":  "new",
-                        "text":  "Allignement Visuel des capacités sur tout les roles"
+                        "kind":  "fix",
+                        "text":  "Nécromancien – la touche de capacité ressuscite le corps visé, avec sa barre et son icône comme les autres rôles, et un message quand c\u0027est impossible"
                     }
                 ],
     "history":  [
+                    {
+                        "version":  "2026.10.17-2",
+                        "published":  "2026-10-16T23:35:54Z",
+                        "changes":  [
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Fix bug"
+                                        },
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Meilleur Interface Locker et Shop"
+                                        },
+                                        {
+                                            "kind":  "new",
+                                            "text":  "Allignement Visuel des capacités sur tout les roles"
+                                        }
+                                    ]
+                    },
                     {
                         "version":  "2026.10.16-1",
                         "published":  "2026-10-16T16:42:21Z",
@@ -122,11 +130,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.94.jar",
+                      "path":  "mods/Gexpress_V1.95.jar",
                       "modId":  "gexpress",
-                      "sha256":  "3234cb7dc924484870dbccd2952bac73fdfb1e57652abeba3349a74f34b1b168",
-                      "size":  9357592,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.17-2/mods__Gexpress_V1.94.jar"
+                      "sha256":  "483a106b41f62665ecbe44a35638f43eb5eb712c2f84e44cb51e0bfdc60ff42e",
+                      "size":  9361665,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.19-1/mods__Gexpress_V1.95.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
