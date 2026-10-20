@@ -1,21 +1,28 @@
 {
     "schema":  1,
     "channel":  "prod",
-    "version":  "2026.10.19-1",
-    "published":  "2026-10-19T17:49:25Z",
+    "version":  "2026.10.20-1",
+    "published":  "2026-10-20T20:08:58Z",
     "minecraft":  "1.21.1",
     "loader":  "fabric",
     "loaderVersion":  "0.18.4",
     "notes":  [
-                  "Nécromancien – la touche de capacité ressuscite le corps visé, avec sa barre et son icône comme les autres rôles, et un message quand c\u0027est impossible"
+
               ],
     "changes":  [
-                    {
-                        "kind":  "fix",
-                        "text":  "Nécromancien – la touche de capacité ressuscite le corps visé, avec sa barre et son icône comme les autres rôles, et un message quand c\u0027est impossible"
-                    }
+
                 ],
     "history":  [
+                    {
+                        "version":  "2026.10.19-1",
+                        "published":  "2026-10-19T17:49:25Z",
+                        "changes":  [
+                                        {
+                                            "kind":  "fix",
+                                            "text":  "Nécromancien – la touche de capacité ressuscite le corps visé, avec sa barre et son icône comme les autres rôles, et un message quand c\u0027est impossible"
+                                        }
+                                    ]
+                    },
                     {
                         "version":  "2026.10.17-2",
                         "published":  "2026-10-16T23:35:54Z",
@@ -130,11 +137,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__fzzy_config-0.7.6_1.21.jar"
                   },
                   {
-                      "path":  "mods/Gexpress_V1.95.jar",
+                      "path":  "mods/Gexpress_V1.96.jar",
                       "modId":  "gexpress",
-                      "sha256":  "483a106b41f62665ecbe44a35638f43eb5eb712c2f84e44cb51e0bfdc60ff42e",
-                      "size":  9361665,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.19-1/mods__Gexpress_V1.95.jar"
+                      "sha256":  "88fe36b62abfdb27194b9421a3c43f52b1495ab4e37db0c8f17eb249f803d047",
+                      "size":  9366867,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.20-1/mods__Gexpress_V1.96.jar"
                   },
                   {
                       "path":  "mods/harpymodloader-1.2.4-h1.3.jar",
@@ -214,11 +221,11 @@
                       "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-1/mods__starry-express_V1.3.jar"
                   },
                   {
-                      "path":  "mods/stupid-express_V1.4.jar",
+                      "path":  "mods/stupid-express_V1.5.jar",
                       "modId":  "stupid_express",
-                      "sha256":  "3f1a4302d9ec2a306583284c80bcd60ce34819b76a5b6392200daa3f60c482e6",
-                      "size":  143915,
-                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.09.26-3/mods__stupid-express_V1.4.jar"
+                      "sha256":  "a5aa0b32f2dd65db6b5c841817071b3642f08c608db544400041a9434dabe192",
+                      "size":  144765,
+                      "url":  "https://github.com/Sachayelo/harpy-pack/releases/download/v2026.10.20-1/mods__stupid-express_V1.5.jar"
                   },
                   {
                       "path":  "mods/voicechat-fabric-1.21.1-2.6.17.jar",
